@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Authors>Bohdan Prkopenko</Authors>
+		<Description>Developer tools contains such tools as base64 encode/decode, XPath evaluation.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+	  <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\lib\Infrastructure\DevTools.Infrastructure.DataContext\DevTools.Infrastructure.DataContext.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\RuntimeSettings.Designer.cs">
+		  <DesignTimeSharedInput>True</DesignTimeSharedInput>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>RuntimeSettings.settings</DependentUpon>
+		</Compile>
+		<Compile Update="Properties\StartupSettings.Designer.cs">
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>StartupSettings.settings</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Properties\RuntimeSettings.settings">
+		  <Generator>SettingsSingleFileGenerator</Generator>
+		  <LastGenOutput>RuntimeSettings.Designer.cs</LastGenOutput>
+		</None>
+		<None Update="Properties\StartupSettings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>StartupSettings.Designer.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+</Project>
