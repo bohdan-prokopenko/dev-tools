@@ -1,9 +1,9 @@
-﻿<Application x:Class="DevTools.App"
+﻿<Application x:Class="DevTools.Host.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DevTools"
-             Startup="Application_Startup">
+             xmlns:local="clr-namespace:DevTools.Host"
+             Startup="OnStartup">
     <Application.Resources>
-
+         
     </Application.Resources>
 </Application>

@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="DevTools.Host.SettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DevTools.Host"
+             mc:Ignorable="d"
+             Loaded="OnControlLoaded"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="5">
+            <TextBlock Text="Plugins catalog"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Browse" Command="{Binding OpenFolderDialogCommand}"/>
+                <TextBlock Text="{Binding PluginsCatalog}"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center">
+            <Button Content="Save" Command="{Binding SaveSettingsCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
