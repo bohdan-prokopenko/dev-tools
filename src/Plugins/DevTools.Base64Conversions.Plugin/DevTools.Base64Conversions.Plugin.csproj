@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Product>Base64Conversions</Product>
+    <Description>Base64 encode/decode</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DevTools.Contracts">
+      <HintPath>..\..\wpf\DevTools.Contracts\bin\Release\net5.0-windows\DevTools.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
