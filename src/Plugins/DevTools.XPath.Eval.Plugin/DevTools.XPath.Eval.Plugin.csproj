@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="DevTools.Contracts">
-      <HintPath>..\..\wpf\DevTools.Contracts\bin\Release\net5.0-windows\DevTools.Contracts.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Common\DevTools.Contracts\DevTools.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

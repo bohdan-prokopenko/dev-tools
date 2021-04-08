@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DevTools.Contracts\DevTools.Contracts.csproj" />
+    <ProjectReference Include="..\..\Common\DevTools.Contracts\DevTools.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
