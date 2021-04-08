@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D00FA315-95C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{10B20054-6AA0-4266-9297-7BB8197B2AD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevTools.Base64Conversions.Plugin", "src\Plugins\DevTools.Base64Conversions.Plugin\DevTools.Base64Conversions.Plugin.csproj", "{ADD009D4-F847-41BB-BC25-89553636EEE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevTools.Base64Conversions.Plugin", "src\Plugins\DevTools.Base64Conversions.Plugin\DevTools.Base64Conversions.Plugin.csproj", "{ADD009D4-F847-41BB-BC25-89553636EEE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevTools.XPath.Eval.Plugin", "src\Plugins\DevTools.XPath.Eval.Plugin\DevTools.XPath.Eval.Plugin.csproj", "{70297720-D81F-4D91-A0AB-2CF5F06D9105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevTools.XPath.Eval.Plugin", "src\Plugins\DevTools.XPath.Eval.Plugin\DevTools.XPath.Eval.Plugin.csproj", "{70297720-D81F-4D91-A0AB-2CF5F06D9105}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{ADD009D4-F847-41BB-BC25-89553636EEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,9 +46,15 @@ Global
 		{70297720-D81F-4D91-A0AB-2CF5F06D9105}.Release|x86.ActiveCfg = Release|Any CPU
 		{70297720-D81F-4D91-A0AB-2CF5F06D9105}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{10B20054-6AA0-4266-9297-7BB8197B2AD0} = {D00FA315-95C9-478B-9646-0F3E0E8168FF}
 		{ADD009D4-F847-41BB-BC25-89553636EEE3} = {10B20054-6AA0-4266-9297-7BB8197B2AD0}
 		{70297720-D81F-4D91-A0AB-2CF5F06D9105} = {10B20054-6AA0-4266-9297-7BB8197B2AD0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B104AB47-7C86-49E3-84BA-064A97CF1708}
 	EndGlobalSection
 EndGlobal

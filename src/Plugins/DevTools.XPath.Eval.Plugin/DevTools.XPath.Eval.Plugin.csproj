@@ -1,8 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Product>Evaluate XPath</Product>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DevTools.Contracts">
+      <HintPath>..\..\wpf\DevTools.Contracts\bin\Release\net5.0-windows\DevTools.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

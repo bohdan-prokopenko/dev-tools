@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevTools.Contracts", "src\w
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevTools.Host", "src\wpf\DevTools.Host\DevTools.Host.csproj", "{3D1F8DA9-614E-426C-A163-190ABF06BDAD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevTools.Base64Conversions.Plugin", "src\Plugins\DevTools.Base64Conversions.Plugin\DevTools.Base64Conversions.Plugin.csproj", "{D61F54F4-46D8-4EE1-B337-2B16B4736415}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,18 @@ Global
 		{3D1F8DA9-614E-426C-A163-190ABF06BDAD}.Release|x64.Build.0 = Release|Any CPU
 		{3D1F8DA9-614E-426C-A163-190ABF06BDAD}.Release|x86.ActiveCfg = Release|Any CPU
 		{3D1F8DA9-614E-426C-A163-190ABF06BDAD}.Release|x86.Build.0 = Release|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Debug|x64.Build.0 = Debug|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Debug|x86.Build.0 = Debug|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Release|x64.ActiveCfg = Release|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Release|x64.Build.0 = Release|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Release|x86.ActiveCfg = Release|Any CPU
+		{D61F54F4-46D8-4EE1-B337-2B16B4736415}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
