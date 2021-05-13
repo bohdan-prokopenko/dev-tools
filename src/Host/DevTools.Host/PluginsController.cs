@@ -23,15 +23,25 @@
 
         public async Task<List<Plugin>> LoadPlugins()
         {
-            var paths = Directory.GetFiles(this.settingsController.GetPluginsEntryCatalog(),
-                                           this.settingsController.GetPluginsSearchPattern(),
-                                           SearchOption.AllDirectories);
-
-            await this.factory.StartNew(() =>
+            string[] paths;
+            try
             {
-                foreach (var path in paths) this.LoadFromPath(path);
-            });
+                paths = Directory.GetFiles(this.settingsController.GetPluginsEntryCatalog(),
+                                                           this.settingsController.GetPluginsSearchPattern(),
+                                                           SearchOption.AllDirectories);
+            }
+            catch (ArgumentException e)
+            {
+                paths = new string[] { };
+            }
 
+            if (paths.Length > 0)
+            {
+                await this.factory.StartNew(() =>
+                        {
+                            foreach (var path in paths) this.LoadFromPath(path);
+                        });
+            }
             return this.plugins;
         }
 

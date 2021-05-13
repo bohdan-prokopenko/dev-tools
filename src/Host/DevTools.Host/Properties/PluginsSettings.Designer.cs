@@ -25,7 +25,7 @@ namespace DevTools.Host.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Bohdan\\Repos\\dev-tools\\src\\wpf\\DevTools.Host\\bin\\Debug\\net5.0-windows")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Catalog {
             get {
                 return ((string)(this["Catalog"]));
