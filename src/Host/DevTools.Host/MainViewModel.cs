@@ -6,7 +6,6 @@
     using System.Windows;
     using System.Windows.Input;
 
-    using DevTools.Contracts;
     using DevTools.Contracts.Mvvm;
 
     public class MainViewModel : ViewModelBase
@@ -50,10 +49,12 @@
         private async void LoadPlugins()
         {
             var plugins = await this.controller.LoadPlugins();
-            if (plugins.Count.Equals(0)) return;
             
-            this.LoadedPlugins = plugins;
-            base.RaisePropertyChanged(nameof(this.LoadedPlugins));
+            if (plugins.Any())
+            {
+                this.LoadedPlugins = plugins;
+                base.RaisePropertyChanged(nameof(this.LoadedPlugins));
+            }
         }
     }
 }
