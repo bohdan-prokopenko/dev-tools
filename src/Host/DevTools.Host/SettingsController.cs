@@ -5,21 +5,25 @@
 
     public class SettingsController
     {
-        private readonly PluginsSettings pluginsSettings;
+        private readonly UserSettings userSettings;
+        private readonly AppSettings appSettings;
 
-        public SettingsController() =>
-            this.pluginsSettings = new PluginsSettings();
+        public SettingsController()
+        {
+            this.userSettings = new UserSettings();
+            this.appSettings = new AppSettings();
+        }
 
         internal string GetPluginsEntryCatalog() =>
-            this.pluginsSettings.Catalog;
+            this.userSettings.Catalog;
 
         internal string GetPluginsSearchPattern() =>
-            this.pluginsSettings.SearchPattern;
+            this.appSettings.SearchPattern;
 
         internal void SetPluginsEntryCatalog(string pluginsCatalog) =>
-            this.pluginsSettings.Catalog = pluginsCatalog;
+            this.userSettings.Catalog = pluginsCatalog;
 
         internal void SavePluginsSettings() =>
-            this.pluginsSettings.Save();
+            this.userSettings.Save();
     }
 }

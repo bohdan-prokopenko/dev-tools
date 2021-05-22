@@ -13,11 +13,11 @@ namespace DevTools.Host.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
-    internal sealed partial class PluginsSettings : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class UserSettings : global::System.Configuration.ApplicationSettingsBase {
         
-        private static PluginsSettings defaultInstance = ((PluginsSettings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new PluginsSettings())));
+        private static UserSettings defaultInstance = ((UserSettings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new UserSettings())));
         
-        public static PluginsSettings Default {
+        public static UserSettings Default {
             get {
                 return defaultInstance;
             }
@@ -32,15 +32,6 @@ namespace DevTools.Host.Properties {
             }
             set {
                 this["Catalog"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("*.Plugin.dll")]
-        public string SearchPattern {
-            get {
-                return ((string)(this["SearchPattern"]));
             }
         }
     }

@@ -23,17 +23,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Properties\PluginsSettings.Designer.cs">
+    <Compile Update="Properties\AppSettings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
-      <DependentUpon>PluginsSettings.settings</DependentUpon>
+      <DependentUpon>AppSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\UserSettings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserSettings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Properties\PluginsSettings.settings">
+    <None Update="Properties\AppSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>PluginsSettings.Designer.cs</LastGenOutput>
+      <LastGenOutput>AppSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\UserSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>UserSettings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
