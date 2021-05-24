@@ -26,9 +26,9 @@ namespace DevTools.Host.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("*.Plugin.dll")]
-        public string SearchPattern {
+        public string PluginsSearchPattern {
             get {
-                return ((string)(this["SearchPattern"]));
+                return ((string)(this["PluginsSearchPattern"]));
             }
         }
     }

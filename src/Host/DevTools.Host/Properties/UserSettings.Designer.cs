@@ -26,12 +26,12 @@ namespace DevTools.Host.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Catalog {
+        public string PluginsEntryCatalog {
             get {
-                return ((string)(this["Catalog"]));
+                return ((string)(this["PluginsEntryCatalog"]));
             }
             set {
-                this["Catalog"] = value;
+                this["PluginsEntryCatalog"] = value;
             }
         }
     }

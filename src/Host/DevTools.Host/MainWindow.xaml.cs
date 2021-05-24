@@ -6,23 +6,24 @@
 
     public partial class MainWindow : Window
     {
-        private readonly MainViewModel viewModel;
-        public MainWindow(MainViewModel viewModel)
+        private readonly MainDataContext dataContext;
+
+        public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = this.viewModel = viewModel;
+            dataContext = (MainDataContext)DataContext;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            this.viewModel.LoadPluginsCommand.Execute(null);
+            dataContext.LoadPluginsCommand.Execute(null);
         }
 
         private void OnPluginMenuItemClick(object sender, RoutedEventArgs e)
         {
             var menuItem = sender as MenuItem;
-            var parameter = (Guid)menuItem.CommandParameter;
-            this.viewModel.GetPluginControl.Execute(parameter);
+            var parameter = (string)menuItem.CommandParameter;
+            dataContext.GetPluginControl.Execute(parameter);
         }
     }
 }

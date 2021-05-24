@@ -4,17 +4,11 @@
 
     public partial class SettingsControl : UserControl
     {
-        private readonly SettingsViewModel viewModel;
-        public SettingsControl(SettingsViewModel viewModel)
-        {
-            this.viewModel = viewModel;
-            InitializeComponent();
-            this.DataContext = this.viewModel;
-        }
+        private readonly SettingsDataContext dataContext;
 
-        private void OnControlLoaded(object sender, System.Windows.RoutedEventArgs e)
+        public SettingsControl()
         {
-            this.viewModel.LoadSettingsCommand.Execute(null);
+            InitializeComponent();
         }
     }
 }
