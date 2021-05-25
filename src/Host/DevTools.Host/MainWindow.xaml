@@ -17,7 +17,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu>
-            <MenuItem Header="Plugins" ItemsSource="{Binding LoadedPlugins}" Command="{Binding LoadPluginsCommand}">
+            <MenuItem Header="Plugins" ItemsSource="{Binding LoadedPlugins}" Command="{Binding ReloadPluginsCommand}">
                 <MenuItem.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" ToolTip="{Binding Description}">

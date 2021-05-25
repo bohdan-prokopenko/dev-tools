@@ -17,6 +17,7 @@
             set
             {
                 userSettings.PluginsEntryCatalog = value;
+                userSettings.Save();
                 RaisePropertyChanged(nameof(PluginsCatalog));
             }
         }

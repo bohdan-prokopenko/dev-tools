@@ -23,6 +23,7 @@
         private IEnumerable<Plugin> loadedPlugins;
 
         public ICommand LoadPluginsCommand { get; private set; }
+        public ICommand ReloadPluginsCommand { get; private set; }
         public ICommand GetPluginControl { get; private set; }
         public ICommand GetSettingsControl { get; private set; }
 
@@ -49,6 +50,7 @@
         public MainDataContext()
         {
             LoadPluginsCommand = new DelegateCommand(LoadPlugins);
+            ReloadPluginsCommand = new DelegateCommand(ReloadPlugins);
             GetPluginControl = new DelegateCommand<string>(CreatePluginControl);
             GetSettingsControl = new DelegateCommand(CreateSettingsControl);
         }
@@ -65,6 +67,12 @@
 
             SelectedControl = plugin.CreateControl();
             RaisePropertyChanged(nameof(this.SelectedControl));
+        }
+
+        private void ReloadPlugins()
+        {
+            userSettings.Reload();
+            LoadPlugins();
         }
 
         private async void LoadPlugins()
