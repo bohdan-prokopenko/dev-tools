@@ -13,8 +13,7 @@
         {
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             
-            var mainWindow = new MainWindow();
-            mainWindow.Show();
+            new MainWindow().Show();
         }
 
         /// <summary>
