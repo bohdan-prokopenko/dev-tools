@@ -4,8 +4,6 @@
 
     public partial class SettingsControl : UserControl
     {
-        private readonly SettingsDataContext dataContext;
-
         public SettingsControl()
         {
             InitializeComponent();

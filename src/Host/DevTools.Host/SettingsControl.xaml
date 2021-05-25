@@ -14,17 +14,14 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <StackPanel Margin="5">
-            <TextBlock Text="Plugins catalog"/>
-            <StackPanel Orientation="Horizontal">
-                <Button Content="Browse" Command="{Binding OpenFolderDialogCommand}"/>
-                <TextBlock Text="{Binding PluginsCatalog}"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel Grid.Row="2" HorizontalAlignment="Center">
-            <Button Content="Save" Command="{Binding SaveSettingsCommand}"/>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Plugins catalog:" Margin="5"/>
+        <TextBlock Text="{Binding PluginsCatalog}" Grid.Column="1" Margin="5"/>
+        <Button Content="Browse" Command="{Binding OpenFolderDialogCommand}" Grid.Column="2" Margin="5"/>
     </Grid>
 </UserControl>
